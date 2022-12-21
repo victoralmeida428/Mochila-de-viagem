@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochila de viagem</title>
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="cabecalho"> Checklist da Mochila</h1>
+    </header>
+    <main class="conteudo">
+        <div class="principal">
+            <div class="mochila"></div>
+            <form action="" class="adicionar" data-adicionar>
+                <label for="item">Nome</label>
+                <input type="text" required name="nome" id="nome">
+                <label for="item">Quantidade</label>
+                <input type="number" required name="quantidade" id="quantidade">
+                <input type="submit" value="Adicionar" class="cadastrar">
+                <input type="button" onclick="limparConteudo()" value="Limpar" class="limpar" data-limpar>
+            </form>
+        </div>
+        
+        <ul class="lista" data-lista="0"></ul>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
